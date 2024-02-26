@@ -1,0 +1,91 @@
+.aboutWrapper{
+    width: 100%;
+    /*background: lightgoldenrodyellow;*/
+}
+.parentAbout{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.childAbout1{
+    width: 55%;
+    height: 100%;
+    /*display: flex;*/
+    /*align-items: center;*/
+    padding: 3%;
+    background: #ececec;
+}
+.childAbout2{
+    width: 45%;
+    height: 100%;
+}
+.aboutImgWrapper{
+    width: 100%;
+    height: 100%;
+    /*background: #0a58ca;*/
+}
+.aboutImg{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.aboutBtn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px 30px 8px 30px;
+    font-size: 18px;
+    background: #5d58d8;
+    color: white;
+    margin-top: 4%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .parentAbout{
+        width: 100%;
+        height: 550px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .parentAbout{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .childAbout1{
+        width: 100%;
+        padding: 5%;
+    }
+    .childAbout2{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutImg{
+        width: 70%;
+        height: 400px;
+        object-fit: fill;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .childAbout1{
+        padding: 7%;
+    }
+    .childAbout2{}
+    .aboutImg{
+        width: 70%;
+        height: 300px;
+        object-fit: fill;
+    }
+    .aboutBtn{
+        padding: 5px 20px 5px 20px;
+        font-size: 14px;
+    }
+}

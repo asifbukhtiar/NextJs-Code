@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+}
+.pointer{
+  cursor: pointer;
+}
+.head{
+  font-size: 30px;
+  font-weight: 800;
+}
+.headHead{
+  font-size: 26px;
+  font-weight: 800;
+}
+.desc{
+  font-size: 20px;
+}
+.links{
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+}
+.inlineFlex{
+  display: inline-flex;
+}
+.justifyCenter{
+  justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+  .head{
+    font-size: 25px;
+    font-weight: 750;
+  }
+  .headHead{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .desc{
+    font-size: 16px;
+  }
+}

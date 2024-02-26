@@ -1,0 +1,95 @@
+.contactWrapper{
+    width: 100%;
+    /*background: lightgoldenrodyellow;*/
+}
+.parentContact{
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.childContact1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5%;
+}
+.childContact2{
+    width: 50%;
+    height: 100%;
+}
+.contactImgWrapper{
+    width: 100%;
+    height: 100%;
+    /*background: #0a58ca;*/
+}
+.contactImg{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.contactBtn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px 30px 8px 30px;
+    font-size: 18px;
+    background: #5d58d8;
+    color: white;
+    margin-top: 4%;
+}
+.contactForm{
+    width: 80%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .parentContact{
+        width: 100%;
+        height: 550px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .parentContact{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .childContact1{
+        width: 100%;
+        padding: 5%;
+    }
+    .childContact2{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .contactImg{
+        width: 70%;
+        height: 400px;
+        object-fit: fill;
+    }
+    .contactForm{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .childContact1{
+        padding: 7%;
+    }
+    .childContact2{}
+    .contactImg{
+        width: 70%;
+        height: 300px;
+        object-fit: fill;
+    }
+    .contactBtn{
+        padding: 5px 20px 5px 20px;
+        font-size: 14px;
+    }
+}

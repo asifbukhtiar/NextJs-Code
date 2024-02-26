@@ -1,0 +1,17 @@
+.faqWrapper{
+    width: 100%;
+    background: #fc8b79;
+    padding: 3%;
+}
+.faqHead{
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 575px) {
+    .faqWrapper{
+        padding: 6%;
+    }
+    .faqHead{
+        margin-bottom: 6%;
+    }
+}
